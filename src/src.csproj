@@ -4,13 +4,15 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RepositoryUrl>https://github.com/wythh24/khmer-name-gen-wrapper</RepositoryUrl>
+        <PackageId>Wrapper.Generator</PackageId>
+        <Authors>Devada</Authors>
+        <Company>Block-Cell</Company>
+        <PackageDescription>Generate data for mock and test on development purpose</PackageDescription>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="NameGenerator" Version="2.0.4" />
     </ItemGroup>
-    <PropertyGroup> 
-    <RepositoryUrl>https://github.com/wythh24/khmer-name-gen-wrapper</RepositoryUrl>
-    </PropertyGroup>
 
 </Project>
