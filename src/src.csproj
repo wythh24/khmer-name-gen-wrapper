@@ -9,6 +9,7 @@
         <Authors>Devada</Authors>
         <Company>Block-Cell</Company>
         <PackageDescription>Generate data for mock and test on development purpose</PackageDescription>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
 
     <ItemGroup>
