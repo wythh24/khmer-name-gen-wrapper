@@ -1,4 +1,5 @@
 using src;
+using src.Extensions;
 using src.Generators;
 using Xunit.Abstractions;
 
@@ -12,12 +13,22 @@ public class UnitTest1
     {
         this.output = output;
     }
+
     [Fact]
-    public void Test1()
+    public void KhmerNameTest()
     {
         GenerateNameWrapper khmerName = new GenerateKhmerName();
         output.WriteLine(khmerName.Generate());
-        
+
         Assert.NotNull(khmerName);
+    }
+
+    [Fact]
+    public void RealNameGenerateTest()
+    {
+        var realNameGenerator = new GenerateKhmerName().RealNameGenerator();
+        output.WriteLine(realNameGenerator);
+
+        Assert.NotNull(realNameGenerator);
     }
 }
