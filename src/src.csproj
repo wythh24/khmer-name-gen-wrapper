@@ -13,7 +13,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Import Include="../README.md" Pack="true" PackagePath="\"/>
+        <None Include="../README.md" pack="true" PackagePath="." />
         <PackageReference Include="NameGenerator" Version="2.0.4"/>
     </ItemGroup>
 
