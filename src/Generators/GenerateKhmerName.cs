@@ -28,6 +28,10 @@ public class GenerateKhmerName : GenerateNameWrapper
         "sreymao", "sreysokun", "sros", "sreypheak", "sreypov", "sokchan", "soksan", "sopanny", "sorithy", "sokseang"
     };
 
+    /// <summary>
+    /// Generates a Khmer name consisting of a first name and a last name.
+    /// </summary>
+    /// <returns>A string representing a Khmer first name followed by a Khmer last name</returns>
     public override string Generate()
     {
         return $"{GetRandomSyllable(firstSyllables)} {GetRandomSyllable(secondSyllables)}";
