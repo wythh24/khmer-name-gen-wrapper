@@ -1,0 +1,16 @@
+name: Run Tests on Pull Request
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build
+        run: dotnet build src/src.csproj -c Release
+      - name: Test
+        run: dotnet test test/test.csproj -c Release --no-build
