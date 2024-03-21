@@ -9,11 +9,12 @@
         <Authors>Devada</Authors>
         <Company>Block-Cell</Company>
         <PackageDescription>Generate data for mock and test on development purpose</PackageDescription>
-        <PackageReadmeFile>../README.md</PackageReadmeFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="NameGenerator" Version="2.0.4" />
+        <Import Include="../README.md" Pack="true" PackagePath="\"/>
+        <PackageReference Include="NameGenerator" Version="2.0.4"/>
     </ItemGroup>
 
 </Project>

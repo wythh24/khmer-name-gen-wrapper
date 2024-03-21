@@ -5,7 +5,7 @@ namespace src.Extensions;
 
 public static class GenerateNameWrapperExtension
 {
-    private static GeneratorBase _GeneratorBase { get; set; }
+    private static GeneratorBase? GeneratorBase { get; set; }
 
     /// <summary>
     /// Generates a non-Khmer name using the provided GenerateNameWrapper.
@@ -14,7 +14,7 @@ public static class GenerateNameWrapperExtension
     /// <returns>A string representing the generated non-Khmer name</returns>
     public static string RealNameGenerator(this GenerateNameWrapper generator)
     {
-        _GeneratorBase = new RealNameGenerator();
-        return _GeneratorBase.Generate();
+        GeneratorBase = new RealNameGenerator();
+        return GeneratorBase.Generate();
     }
 }
